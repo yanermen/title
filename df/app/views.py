@@ -8,7 +8,7 @@ def process_view(request):
        sort_dict = {}
        l = []
 
-       with open(r'app\example\abstracts_trainingset.csv', encoding='utf8') as csvfile:
+       with open(r'app/example/abstracts_trainingset.csv', encoding='utf8') as csvfile:
            readCSV = csv.reader(csvfile, delimiter=',')
 
            for row in readCSV:
