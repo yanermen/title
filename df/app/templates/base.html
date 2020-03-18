@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abstract</title>
+</head>
+<body>
+
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="text" name="user_data">
+    <button type="submit">Process</button>
+</form>
+
+
+<ul>
+    {% for new_line in title %}
+        <li>{{ new_line }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
+
